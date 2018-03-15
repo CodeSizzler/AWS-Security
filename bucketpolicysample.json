@@ -1,0 +1,16 @@
+{
+	"Version": "2018-03-15",
+	"Statement": [
+	{
+	"Effect": "Allow",
+	"Principal": {
+	"AWS": ["arn:aws:iam:123:user/Feroz",
+		"arn:aws:iam::123:root"]
+	},
+	"Action": "S3:*",
+	"Resource": ["arn:aws:s3:::my_bucket",
+		     "arn:aws:s3:::my_bucket/*"]
+	}
+	]
+}
+	
